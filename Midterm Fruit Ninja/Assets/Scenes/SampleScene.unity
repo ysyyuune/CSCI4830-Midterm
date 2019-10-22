@@ -183,15 +183,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010741465696, guid: 3932544264426194ca6f74855d85e34e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 1.83
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 4000010741465696, guid: 3932544264426194ca6f74855d85e34e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.14
+      value: -0.1
       objectReference: {fileID: 0}
     - target: {fileID: 4000010741465696, guid: 3932544264426194ca6f74855d85e34e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 3.74
+      value: 1.01
       objectReference: {fileID: 0}
     - target: {fileID: 4000010741465696, guid: 3932544264426194ca6f74855d85e34e, type: 3}
       propertyPath: m_LocalRotation.x
@@ -227,15 +227,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4000010741465696, guid: 3932544264426194ca6f74855d85e34e, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4000010741465696, guid: 3932544264426194ca6f74855d85e34e, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 4000010741465696, guid: 3932544264426194ca6f74855d85e34e, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2
+      value: 0.4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3932544264426194ca6f74855d85e34e, type: 3}
@@ -338,7 +338,7 @@ Light:
   m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
-  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_BoundingSphereOverride: {x: 5.06e-43, y: -6.7424526e-19, z: 5.06e-43, w: 7.903257e+31}
   m_UseBoundingSphereOverride: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
@@ -734,7 +734,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 963194225}
   cameraProxy: {fileID: 1688403768}
-  lerpSpeed: 0.02
+  lerpSpeed: 0.01
 --- !u!1001 &1575555734
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1084,6 +1084,11 @@ PrefabInstance:
     - target: {fileID: 9050289528430802926, guid: ec94a647aebcb57408b9746c549af216,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9050289528430802927, guid: ec94a647aebcb57408b9746c549af216,
+        type: 3}
+      propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
