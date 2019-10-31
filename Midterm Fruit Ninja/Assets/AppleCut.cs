@@ -24,6 +24,7 @@ public class AppleCut: MonoBehaviour
         if (Vector3.Distance(other.transform.position, this.transform.position) < maxDistance)
         {
             audioSource.Play();
+            SumScore.Add(10);
         }
         else
         {
