@@ -25,6 +25,7 @@ public class AppleCut: MonoBehaviour
         {
             audioSource.Play();
             SumScore.Add(10);
+            Destroy(apple);
         }
         else
         {
