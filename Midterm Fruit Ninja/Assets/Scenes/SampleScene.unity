@@ -1005,12 +1005,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1457669240}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 94aaa258f3cfc0040829fe5b8c8931c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  objectName: 
+  objectName: ryan_headset
 --- !u!4 &1457669242
 Transform:
   m_ObjectHideFlags: 0
