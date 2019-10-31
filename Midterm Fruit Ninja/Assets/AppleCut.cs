@@ -18,6 +18,12 @@ public class AppleCut: MonoBehaviour
     {
         
     }
+
+    void SpawnApple()
+    {
+        Vector3 position = new Vector3(Random.Range(-10.0F, 10.0F), 1, Random.Range(-10.0F, 10.0F));
+        Instantiate(apple, position, Quaternion.identity);
+    }
     void OnTriggerStay(Collider other)
     {
         // other object is close
@@ -26,6 +32,7 @@ public class AppleCut: MonoBehaviour
             audioSource.Play();
             SumScore.Add(10);
             Destroy(apple);
+            SpawnApple();
         }
         else
         {
