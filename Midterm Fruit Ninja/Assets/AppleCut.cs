@@ -6,6 +6,7 @@ public class AppleCut: MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject apple;
+    public GameObject applegenerator;
     public float maxDistance = 5;
     AudioSource audioSource;
     void Start()
@@ -22,7 +23,7 @@ public class AppleCut: MonoBehaviour
     void SpawnApple()
     {
         Vector3 position = new Vector3(Random.Range(-10.0F, 10.0F), 1, Random.Range(-10.0F, 10.0F));
-        Instantiate(apple, position, Quaternion.identity);
+        Instantiate(applegenerator,position, Quaternion.identity);
     }
     void OnTriggerStay(Collider other)
     {

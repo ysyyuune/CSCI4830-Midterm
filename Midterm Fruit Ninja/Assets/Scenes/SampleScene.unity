@@ -502,6 +502,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   apple: {fileID: 2018256675}
+  applegenerator: {fileID: 1608549517}
   maxDistance: 5
 --- !u!82 &444018017
 AudioSource:
