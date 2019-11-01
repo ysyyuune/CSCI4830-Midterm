@@ -6,8 +6,9 @@ public class AppleCut: MonoBehaviour
 {
     // Start is called before the first frame update
     public GameObject apple;
+    public GameObject strawberry;
+    public GameObject kiwi;
     public GameObject applegenerator;
-    public float maxDistance = 5;
     AudioSource audioSource;
     void Start()
     {
@@ -15,29 +16,33 @@ public class AppleCut: MonoBehaviour
     }
 
         // Update is called once per frame
-        void Update()
-    {
-        
-    }
 
     void SpawnApple()
     {
-        Vector3 position = new Vector3(Random.Range(-10.0F, 10.0F), 1, Random.Range(-10.0F, 10.0F));
-        Instantiate(applegenerator,position, Quaternion.identity);
+        Vector3 position = new Vector3(Random.Range(-10,10), 28, Random.Range(-10,10));
+        Instantiate(apple,position, Quaternion.identity);
     }
-    void OnTriggerStay(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
         // other object is close
-        if (Vector3.Distance(other.transform.position, this.transform.position) < maxDistance)
+        if (collision.collider.tag == "apple")
         {
             audioSource.Play();
             SumScore.Add(10);
             Destroy(apple);
             SpawnApple();
         }
-        else
+        if (collision.collider.tag == "strawberry")
         {
-            audioSource.Stop();
+            audioSource.Play();
+            SumScore.Add(10);
+            Destroy(strawberry);
+        }
+        if (collision.collider.tag == "kiwi")
+        {
+            audioSource.Play();
+            SumScore.Add(10);
+            Destroy(kiwi);
         }
     }
 }
